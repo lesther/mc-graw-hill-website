@@ -1,0 +1,31 @@
+@import "definitions.scss";
+
+body{
+    padding-top: 110px;
+    section{
+        padding: 40px 25px;
+        @include md{
+            padding: 80px 40px;
+        }
+    }
+}
+
+//////////////////////////////
+// boxed
+@include md{
+    .boxed{
+        max-width: $max-width-container-page;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .title-boxed{
+        max-width: $max-width-title;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .boxed-sm{
+        max-width: $max-width-sm;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

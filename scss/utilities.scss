@@ -1,0 +1,40 @@
+@import "definitions.scss";
+
+//////////////////////////////
+// fonts
+// weight
+.fw-light{
+    font-weight: 300;
+}
+.fw-bold{
+    font-weight: 700;
+}
+.fw-semibold{
+    font-weight: 600;
+}
+.fw-black{
+    font-weight: 900;
+}
+
+
+//////////////////////////////
+$name-color: (
+    primary: $primary-color,
+    secondary: $secondary-color,
+    secondary-accent:$secondary-accent-color,
+    berry: $berry-color,
+    concord: $concord-color,
+    orange: $orange-color,
+);
+    
+@each $name, $value in $name-color {
+    // color
+    .color-#{$name}{
+        color: $value;
+    }
+
+    // background
+    .bg-#{$name}{
+        background-color: $value;
+    }
+}

@@ -1,0 +1,30 @@
+@import "definitions.scss";
+
+//////////////////////////////
+// headline count
+.headline-count-section .fas{
+    font-size: $icon-font-size-lg;
+    color: $primary-color;
+}
+
+
+// tabs
+.tab-home-container{
+    padding: 40px;
+    background-color: $secondary-accent-color;
+    color: white;
+    @include corner-10;
+    .nav-pills{
+        .nav-link{
+            color: white;
+            &.active{
+                background-color: white;
+                color: $secondary-accent-color;
+            }
+        }
+        .show>.nav-link{
+            background-color: white;
+            color: $secondary-accent-color;
+        }
+    }
+}
