@@ -4,58 +4,58 @@
 //////////////////////////////
 // headline
 .headline-title{
-    font-size: $title-font-size;
-    margin-bottom: 20px;
-    font-weight: 400;
+	font-size: $title-font-size;
+	margin-bottom: 20px;
+	font-weight: 400;
 }
 .headline-subtitle{
-    font-size: $subtitle-font-size;
-    margin-bottom: 20px;
-    font-weight: 400;
+	font-size: $subtitle-font-size;
+	margin-bottom: 20px;
+	font-weight: 400;
 }
 .headline-title-xl{
-    font-size: $title-font-size;
-    margin-bottom: 20px;
-    font-weight: 300;
-    @include md{
-        font-size: $title-font-size-xl;
-    }
+	font-size: $title-font-size;
+	margin-bottom: 20px;
+	font-weight: 300;
+	@include md{
+			font-size: $title-font-size-xl;
+	}
 }
 .headline-title-sm{
-    font-size: $title-font-size-sm;
-    margin-bottom: 20px;
-    font-weight: 300;
+	font-size: $title-font-size-sm;
+	margin-bottom: 20px;
+	font-weight: 300;
 }
 
 
 //////////////////////////////
 // items
 .item-box{
-    padding: 40px;
+	padding: 40px;
 }
 
 
 //////////////////////////////
 // price on top
 .price-sticky-head{
-    padding: 40px;
-    background-color: white;
-    z-index: 9;
-    .btn{
-        font-size: $font-size-xs;
-    }
-    @include lg{
-        position: -webkit-sticky;
-        position: sticky;
-        top: 100px;
-    }
+	padding: 40px;
+	background-color: white;
+	z-index: 9;
+	.btn{
+		font-size: $font-size-xs;
+	}
+	@include lg{
+		position: -webkit-sticky;
+		position: sticky;
+		top: 100px;
+	}
 }
 
 
 //////////////////////////////
 // textbody
 p{
-    a{
-        text-decoration: underline;
-    }
+	a{
+		text-decoration: underline;
+	}
 } 

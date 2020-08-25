@@ -4,37 +4,44 @@
 // fonts
 // weight
 .fw-light{
-    font-weight: 300;
+	font-weight: 300;
 }
 .fw-bold{
-    font-weight: 700;
+	font-weight: 700;
 }
 .fw-semibold{
-    font-weight: 600;
+	font-weight: 600;
 }
 .fw-black{
-    font-weight: 900;
+	font-weight: 900;
 }
+
+//////////////////////////////
+// max-width
+.mx-w-400{
+	max-width: 400px;
+}
+
 
 
 //////////////////////////////
 $name-color: (
-    primary: $primary-color,
-    secondary: $secondary-color,
-    secondary-accent:$secondary-accent-color,
-    berry: $berry-color,
-    concord: $concord-color,
-    orange: $orange-color,
+	primary: $primary-color,
+	secondary: $secondary-color,
+	secondary-accent:$secondary-accent-color,
+	berry: $berry-color,
+	concord: $concord-color,
+	orange: $orange-color,
 );
-    
+	
 @each $name, $value in $name-color {
-    // color
-    .color-#{$name}{
-        color: $value;
-    }
+	// color
+	.color-#{$name}{
+		color: $value;
+	}
 
-    // background
-    .bg-#{$name}{
-        background-color: $value;
-    }
+	// background
+	.bg-#{$name}{
+		background-color: $value;
+	}
 }
