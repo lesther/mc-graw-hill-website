@@ -64,3 +64,31 @@
 		}
 	}
 }
+
+
+// list
+.home-list{
+	font-size: $font-size-lg;
+	li{
+		margin-bottom: 25px;
+		&:last-child{
+			margin-bottom:0;
+		}
+	}
+}
+.home-list-icons.custom-icon-list{
+	li{
+		padding: 0;
+		span{
+			display: inline-block;
+			position: relative;
+			padding: 10px 30px 10px 50px;
+			@include corner-oval;
+			background-color: rgba( $berry-color, .1 );
+			[class*="fa-"]{
+				left:	15px;
+				top: 10px;
+			}
+		}
+	}
+}

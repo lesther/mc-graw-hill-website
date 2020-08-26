@@ -39,8 +39,16 @@ $name-color: (
   }
 
   //////////////////////////////
+  // list
   // checklist
   .check-list-#{$name} li:before{
+    color: $value;
+  }
+  // list item
+  .list-item-#{$name} li:before{
+    color: $value;
+  }
+  .custom-icon-list-#{$name} li [class*="fa-"]{
     color: $value;
   }
 }

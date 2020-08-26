@@ -41,6 +41,13 @@
 	padding: 40px;
 	background-color: white;
 	z-index: 9;
+	// title
+	.headline-title{
+		font-weight: bold;
+		span{
+			font-size: $subtitle-font-size;
+		}
+	}
 	.btn{
 		font-size: $font-size-xs;
 	}
