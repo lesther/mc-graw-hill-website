@@ -1,0 +1,54 @@
+// background
+$background-body: #fff;
+
+
+//////////////////////////////
+// color
+$dark-color: #232731;
+$black-color: #000000;
+$black-color-70p: rgba(0,0,0,0.7);
+$light-color: #C4C4C4;
+$gray-color: #E2DFCA;
+$danger-color: #CD0000;
+$primary-color: #E21A23;
+$secondary-color: #FFB600;
+$secondary-accent-color: #625D99;
+$berry-color: #AF1858;
+$concord-color: #692146;
+$orange-color: #EC7700;
+$bg-white-90: rgba(255,255,255,0.9);
+
+
+
+// colors
+//////////////////////////////
+$name-color: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+  secondary-accent: $secondary-accent-color,
+  berry: $berry-color,
+  concord: $concord-color,
+  orange: $orange-color,
+);
+
+@each $name, $value in $name-color {
+  //////////////////////////////
+  // divider
+  .split-#{$name}{
+    background-color: $value;
+  }
+
+  //////////////////////////////
+  // list
+  // checklist
+  .check-list-#{$name} li:before{
+    color: $value;
+  }
+  // list item
+  .list-item-#{$name} li:before{
+    color: $value;
+  }
+  .custom-icon-list-#{$name} li [class*="fa-"]{
+    color: $value;
+  }
+}
