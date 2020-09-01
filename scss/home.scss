@@ -64,11 +64,47 @@
 		}
 	}
 }
-
+// books
+.books-carrousel{
+	.swiper-slide{
+		background-color: white;
+		@include corner-10;
+		.wrap-card{
+			border-top: 2px solid $gray-color;
+			padding: 20px;
+			color: $dark-color;
+			.headline-title-xs{
+				font-family: $body-ff;
+				color: $berry-color;
+			}
+		}
+	}
+}
+.books-section{
+	position: relative;
+	&:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position: center center;
+		background-image: url('../images/stock-4.jpg');
+		@include opacity-10;
+	}
+	.books-wrap{
+		position: relative;
+		z-index: 2;
+	}
+}
 
 // list
 .home-list{
-	font-size: $font-size-lg;
 	li{
 		margin-bottom: 25px;
 		&:last-child{
@@ -90,5 +126,13 @@
 				top: 10px;
 			}
 		}
+	}
+}
+
+// suscription-section
+.suscription-section{
+	.card{
+		@include corner-10;
+		overflow: hidden;
 	}
 }

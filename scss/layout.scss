@@ -6,25 +6,35 @@
 .headline-title{
 	font-size: $title-font-size;
 	margin-bottom: 20px;
-	font-weight: 400;
+	font-weight: bold;
+	font-family: $titles-ff;
 }
 .headline-subtitle{
 	font-size: $subtitle-font-size;
 	margin-bottom: 20px;
-	font-weight: 400;
+	font-weight: bold;
+	font-family: $titles-ff;
 }
 .headline-title-xl{
 	font-size: $title-font-size;
 	margin-bottom: 20px;
-	font-weight: 300;
+	font-weight: bold;
+	font-family: $titles-ff;
 	@include md{
-			font-size: $title-font-size-xl;
+		font-size: $title-font-size-md;
 	}
 }
 .headline-title-sm{
 	font-size: $title-font-size-sm;
 	margin-bottom: 20px;
 	font-weight: 300;
+	font-family: $titles-ff;
+}
+.headline-title-xs{
+	font-size: $title-font-size-xs;
+	margin-bottom: 20px;
+	font-weight: 600;
+	font-family: $titles-ff;
 }
 
 
@@ -38,7 +48,7 @@
 //////////////////////////////
 // price on top
 .price-sticky-head{
-	padding: 40px;
+	padding: 20px 40px;
 	background-color: white;
 	z-index: 9;
 	// title
@@ -66,3 +76,10 @@ p{
 		text-decoration: underline;
 	}
 } 
+
+// box lighter
+.box-lighter{
+	padding: 40px;
+	background-color: #fcebe4;
+	border-radius: 30px;
+}

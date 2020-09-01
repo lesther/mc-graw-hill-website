@@ -18,6 +18,9 @@
 
 //////////////////////////////
 // max-width
+.mx-w-200{
+	max-width: 200px;
+}
 .mx-w-400{
 	max-width: 400px;
 }
@@ -30,7 +33,29 @@
 .mx-w-800{
 	max-width: 800px;
 }
+//////////////////////////////
+// min-width
+@include md{
+	.min-w-md-700{
+		min-width: 700px;
+	}
+}
+@include md{
+	.min-w-md-600{
+		min-width: 600px;
+	}
+}
+//////////////////////////////
+// height
+.h-200{
+	height: 300px;
+}
 
+
+// float
+.f-md-right{
+	float: right;
+}
 
 
 //////////////////////////////
