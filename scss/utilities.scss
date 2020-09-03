@@ -94,6 +94,9 @@ $name-color: (
 	.color-#{$name}{
 		color: $value;
 	}
+	.color-#{$name}-hover:hover{
+		color: $value;
+	}
 
 	// background
 	.bg-#{$name}{
